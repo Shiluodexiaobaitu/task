@@ -14,6 +14,7 @@
         // margin-top: 85px;
         // font-size: 36px;
         color: rgb(231, 138, 153);
+        font-size: 20px;
     }
 }
 
@@ -26,6 +27,10 @@
 
     p:nth-child(1){
         margin-top: 85px;
-        font-size: 36px;
+        font-size: 36px;    
+    }
+    p:nth-child(2){
+        font-size: 20px;
+        
     }
 }

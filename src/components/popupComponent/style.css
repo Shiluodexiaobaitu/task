@@ -35,6 +35,7 @@
 }
 .PopupComponent .modal .modal_content {
   margin-top: 20px;
+  font-size: 20px;
 }
 .PopupComponent .modal .modal_icon {
   position: absolute;
