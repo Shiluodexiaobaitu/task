@@ -1,0 +1,31 @@
+.customized{
+    width: 345px;
+    height: 270px;
+    background-color: rgb(235, 202, 207);
+    border: 1px solid rgb(245, 159, 173);
+    text-align: center;
+
+    p:nth-child(1){
+        margin-top: 85px;
+        font-size: 36px;
+        color: rgb(241, 79, 106);
+    }
+    p:nth-child(2){
+        // margin-top: 85px;
+        // font-size: 36px;
+        color: rgb(231, 138, 153);
+    }
+}
+
+.customizedNo{
+    width: 345px;
+    height: 270px;
+    background-color: #eeeeee;
+    border: 1px solid #beb6b6;
+    text-align: center;
+
+    p:nth-child(1){
+        margin-top: 85px;
+        font-size: 36px;
+    }
+}

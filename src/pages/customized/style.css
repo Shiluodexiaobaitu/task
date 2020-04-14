@@ -1,0 +1,26 @@
+.customized {
+  width: 345px;
+  height: 270px;
+  background-color: #ebcacf;
+  border: 1px solid #f59fad;
+  text-align: center;
+}
+.customized p:nth-child(1) {
+  margin-top: 85px;
+  font-size: 36px;
+  color: #f14f6a;
+}
+.customized p:nth-child(2) {
+  color: #e78a99;
+}
+.customizedNo {
+  width: 345px;
+  height: 270px;
+  background-color: #eeeeee;
+  border: 1px solid #beb6b6;
+  text-align: center;
+}
+.customizedNo p:nth-child(1) {
+  margin-top: 85px;
+  font-size: 36px;
+}

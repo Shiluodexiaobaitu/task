@@ -1,0 +1,28 @@
+.senior {
+  width: 345px;
+  height: 270px;
+  background-color: #ebcacf;
+  border: 1px solid #f59fad;
+  margin-right: 20px;
+  text-align: center;
+}
+.senior p:nth-child(1) {
+  margin-top: 85px;
+  font-size: 36px;
+  color: #f14f6a;
+}
+.senior p:nth-child(2) {
+  color: #e78a99;
+}
+.seniorNo {
+  width: 345px;
+  height: 270px;
+  background-color: #eeeeee;
+  border: 1px solid #beb6b6;
+  margin-right: 20px;
+  text-align: center;
+}
+.seniorNo p:nth-child(1) {
+  margin-top: 85px;
+  font-size: 36px;
+}
