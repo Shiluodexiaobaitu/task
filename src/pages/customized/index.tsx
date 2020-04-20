@@ -7,10 +7,10 @@ interface IProps {
 }
 
 class Customized extends React.Component<IProps>{
-    constructor(props: IProps) {
-        super(props)
+    // constructor(props: IProps) {
+    //     super(props)
 
-    }
+    // }
 
     setColor = () => {
         this.props.styleProcessingClick('CustomizedAction')

@@ -126,7 +126,9 @@ module.exports = function (webpackEnv) {
               utf8: false
             }),
             postcssCssnext({}),
-            postcssViewportUnits({}),
+            postcssViewportUnits({
+              filterRule: rule => rule.selector.indexOf('::after') === -1 && rule.selector.indexOf('::before') === -1 && rule.selector.indexOf(':after') === -1 && rule.selector.indexOf(':before') === -1 // 在转化过程中加入了过滤器，用来回避伪类选择器
+            }),
             cssnano({
               //旧的 --坑点
               // preset: "advanced",
@@ -338,6 +340,7 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        '@': paths.appSrc //支持@符合导入模块
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
