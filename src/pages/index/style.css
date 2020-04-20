@@ -1,5 +1,6 @@
 .box {
   width: 750px;
+  height: 2500px;
 }
 .box .head {
   width: 750px;
@@ -27,6 +28,7 @@
 }
 .box .content .content_top span:nth-child(2) {
   margin-left: 20px;
+  font-size: 18px;
 }
 .box .content .content_top span:nth-child(2) i {
   color: #f05a5a;
@@ -66,5 +68,6 @@
   width: 100%;
   height: 40px;
   overflow: hidden;
+  font-size: 20px;
   line-height: 40px;
 }

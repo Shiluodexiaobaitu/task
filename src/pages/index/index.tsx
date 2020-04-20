@@ -111,10 +111,12 @@ class App extends React.Component<IProps, IState> {
         });
         let arr: any[] = ['icon-ganga', 'icon-help', 'icon-kongxiangzi', 'icon-locate', 'icon-more', 'icon-more', 'icon-myline', 'icon-zhaohuo2normal', 'icon-zhaohuo2press', 'icon-gongju']
         let num: number[] = styleProcessingState === 'SeniorAction' ? [1, 2, 3, 4, 10] : [5, 6, 7, 8, 9]
+        let condition: boolean
         let DOMnode = arr.map((item, index) => {
-            return <li key={index} onClick={num.includes(index + 1) ? this.popupEvent.bind(this,index+1) : this.popupEventNo}>
-                <IconFont type={item} style={{ fontSize: '20px', color: num.includes(index + 1) ? 'rgb(228, 89, 114)' : ' rgb(136, 98, 105)' }} />
-                <p style={{ color: num.includes(index + 1) ? 'rgb(228, 89, 114)' : ' rgb(136, 98, 105)' }}>标题{index + 1}</p>
+            condition =  num.includes(index + 1) ? true : false
+            return <li key={index} onClick={ condition ? this.popupEvent.bind(this,index+1) : this.popupEventNo}>
+                <IconFont type={item} style={{ fontSize: '20px',marginTop:'10px', color: condition ? 'rgb(228, 89, 114)' : ' rgb(136, 98, 105)' }} />
+                <p style={{ color: condition ? 'rgb(228, 89, 114)' : ' rgb(136, 98, 105)' }}>标题{index + 1}</p>
             </li>
         })
 
@@ -148,7 +150,7 @@ class App extends React.Component<IProps, IState> {
             </div>
 
             <div className="tail">
-                
+
             </div>
         </div>
     }

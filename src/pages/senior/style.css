@@ -13,6 +13,7 @@
 }
 .senior p:nth-child(2) {
   color: #e78a99;
+  font-size: 20px;
 }
 .seniorNo {
   width: 345px;
@@ -25,4 +26,7 @@
 .seniorNo p:nth-child(1) {
   margin-top: 85px;
   font-size: 36px;
+}
+.seniorNo p:nth-child(2) {
+  font-size: 20px;
 }

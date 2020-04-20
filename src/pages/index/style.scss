@@ -4,6 +4,7 @@
 
 .box{
     width: 750px;
+    height: 2500px;
 
     .head{
         width: 750px;
@@ -31,8 +32,8 @@
                 font-size: 30px;
             }
             span:nth-child(2){
-                // font-size: 30px;
                 margin-left: 20px;
+                font-size: 18px;
                 i{
                     color: rgb(240, 90, 90);
                 }
@@ -72,6 +73,7 @@
                         width: 100%;
                         height: 40px;
                         overflow: hidden;
+                        font-size: 20px;
                         // position: absolute;
                         // top: 60px;
                         // left: 5px;

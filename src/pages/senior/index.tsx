@@ -11,10 +11,10 @@ interface IState {
 }
 
 class Senior extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props)
+    // constructor(props: IProps) {
+    //     super(props)
 
-    }
+    // }
 
     setColor = () => {
         this.props.styleProcessingClick('SeniorAction')
